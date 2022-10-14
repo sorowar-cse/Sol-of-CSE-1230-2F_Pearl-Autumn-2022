@@ -18,14 +18,20 @@ int main()
             long long int r1= a*b;
             long long int r2= c*d;
 
-            if(r1>r2)
+            if(r1==r2)
+            {
+                if(a>c)
+                    cout << "First rectangle is larger" << endl;
+                else if(c>a)
+                    cout << "Second rectangle is larger" << endl;
+                else
+                    cout << "Same rectangle" << endl;
+            }
+            else if(r1>r2)
                 cout << "First rectangle is larger" << endl;
-            else if(r2>r1)
-                cout << "Second rectangle is larger" << endl;
             else
-                cout << "Same rectangle" << endl;
+                cout << "Second rectangle is larger" << endl;
         }
     }
-
 
 }
